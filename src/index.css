@@ -1,9 +1,8 @@
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-
+  font-family: "Lato", sans-serif;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
@@ -21,4 +20,38 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+}
+h1,
+h2 {
+  font-family: "Raleway", sans-serif;
+}
+h3 {
+  font-size: 20px;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2rem;
+  border: solid white 4px;
+}
+.column1 {
+  padding-right: 60px;
+}
+.column2 {
+  padding: 20px;
+}
+img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 776px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1fr;
+  }
+  .column2 {
+    padding: 0;
+  }
 }
