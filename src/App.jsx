@@ -29,8 +29,8 @@ function App() {
           </h3>
         </div>
         <div className="column2">
-          <img src={nasaData.url} alt="" />
           <h2>Publication date: {nasaData.date}</h2>
+          <img src={nasaData.url} alt="" />
         </div>
       </div>
     </div>
